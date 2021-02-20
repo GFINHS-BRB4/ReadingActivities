@@ -1,0 +1,222 @@
+html{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+img{
+   /* height: 100%;
+    width: 100%;
+    border: 5px solid #555;*/
+}
+
+body{
+    background-color: darkslateblue;
+}
+
+/*Header*/
+#header {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+#header .top-bar { 
+    background-color: darkolivegreen;
+    height: 50px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#header .header{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 120px;
+    width: auto;
+    background-color: darkgreen;
+    justify-content:left;
+    align-content: center;
+    align-items: center;
+  
+}
+#header .header .Logo img{
+   width:100px;
+   padding: 20px;
+    
+
+}
+
+#header .header .title h1{
+    font-size: 3rem;
+    color: whitesmoke;  
+    text-align: center;
+    padding: 10px;
+}
+
+#header .header .nav-content{
+    position:absolute;
+    right: 20px;
+      /*background-color: yellow;*/
+   
+}
+/*for JS Active*/
+#header .header .nav-content.active{
+    display: none;
+}
+
+#header .header .nav-content ul{ 
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0%;
+    right:0;
+    color: cornsilk;
+}
+
+#header .header .nav-content ul a{
+    font-size: 2.2rem;;
+    font-weight:bold;
+    padding: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color:white;
+}
+
+/* Grade 7*/
+#Grade7 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items:baseline;
+    background-color: red;
+    margin-top: 170px;
+}
+
+#Grade7 .Grade7 {
+    background-color: green;
+    width: inherit;
+  
+}
+
+#Grade7 .Grade7 h1{
+    background-color: lightgreen;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.Grade-Item .Story{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Grade-Item .Story img{ 
+    width: 300px;
+    border: lightblue;
+    border-radius: 20px;
+}
+
+
+/* Grade 8*/
+#Grade8 {
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    align-items:baseline;
+    background-color: red;
+    margin-top: 0px;
+}
+
+#Grade8 .Grade8 {
+    background-color: green;
+    width: inherit;
+  
+}
+
+#Grade8 .Grade8 h1{
+    background-color: lightgreen;
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* Grade 9*/
+#Grade9 {
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    align-items:baseline;
+    background-color: red;
+    margin-top: 0px;
+}
+
+#Grade9 .Grade9 {
+    background-color: green;
+    width: inherit;
+  
+}
+
+#Grade9 .Grade9 h1{
+    background-color: lightgreen;
+    text-align: center;
+    font-size: 3rem;
+}
+   
+/* Grade 10*/
+#Grade10 {
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    align-items:baseline;
+    background-color: red;
+    margin-top: 0px;
+}
+
+#Grade10 .Grade10 {
+    background-color: green;
+    width: inherit;
+  
+}
+
+#Grade10 .Grade10 h1{
+    background-color: lightgreen;
+    text-align: center;
+    font-size: 3rem;
+}
+   
+   
+
+@media only screen and (max-width: 1400px){ 
+
+    #header .header {
+        display: flex;
+        flex-direction: row;
+        /*justify-content: center;*/
+        align-content: center;
+        align-items: center;
+    }
+
+    #header .header .nav-content ul {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
